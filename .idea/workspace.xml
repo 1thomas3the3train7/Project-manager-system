@@ -18,6 +18,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
@@ -45,6 +48,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2FXrRjGMEOfQNqryRqaEEIu11Zs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -144,11 +148,22 @@
       <workItem from="1664649264783" duration="6716000" />
       <workItem from="1664701169495" duration="2419000" />
       <workItem from="1664719972767" duration="8058000" />
-      <workItem from="1664802385617" duration="6546000" />
+      <workItem from="1664802385617" duration="6901000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
