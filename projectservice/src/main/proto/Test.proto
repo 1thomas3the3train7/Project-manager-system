@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package com.example.projectservice.Grpc;
+
+option java_package = "com.example.projectservice.Grpc";
+
+message testRequest{
+  string key1 = 1;
+}
+
+message testResponse{
+  string response1 = 1;
+}
+
+service TestService{
+  rpc getTest(testRequest) returns(testResponse);
+}
