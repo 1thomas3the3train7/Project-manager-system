@@ -4,44 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a33d714b-088f-4f15-ae0c-4fd06cbfb237" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Model/Passport/BasePassport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Repository/BudgetRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Repository/PassportRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Repository/PlanRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/RepositoryImpl/BudgetRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/RepositoryImpl/PassportRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/RepositoryImpl/PlanRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/RepositoryImpl/ProjectRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/RepositoryImpl/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Config/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Config/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/DTO/RoleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/DTO/RoleDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/DTO/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/DTO/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Grpc/GrpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Grpc/GrpcClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/DtoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/DtoUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/JwtUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/main/proto/User.proto" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/proto/User.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/test/java/com/example/authservice/AuthserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/test/java/com/example/authservice/AuthserviceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/Config/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/Config/Route.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectservice/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectservice/src/test/java/com/example/projectservice/ProjectserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/src/test/java/com/example/projectservice/ProjectserviceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/DTO/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/DTO/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Grpc/GrpcServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Grpc/GrpcServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Model/User/BaseUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Model/User/BaseUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Model/User/DetailedUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Model/User/DetailedUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/RepositoryImpl/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/RepositoryImpl/UserRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Service/DtoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Service/DtoUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userservice/src/main/proto/User.proto" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/proto/User.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userservice/src/test/java/com/example/userservice/UserserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/test/java/com/example/userservice/UserserviceApplicationTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="a33d714b-088f-4f15-ae0c-4fd06cbfb237" name="Changes" comment="add project model and fix authservice" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -279,7 +242,7 @@
       <workItem from="1665134528068" duration="1647000" />
       <workItem from="1665136193685" duration="10686000" />
       <workItem from="1665158729518" duration="3830000" />
-      <workItem from="1665221425493" duration="9763000" />
+      <workItem from="1665221425493" duration="10101000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1664821098689</created>
@@ -288,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664821098689</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add project model and fix authservice">
+      <created>1665235434421</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665235434421</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +277,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="add project model and fix authservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="add project model and fix authservice" />
   </component>
 </project>
