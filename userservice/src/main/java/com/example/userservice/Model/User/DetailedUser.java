@@ -26,4 +26,8 @@ public class DetailedUser extends BaseUser {
     @JoinTable(name = "user_and_role",joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<DetailedRole> roles;
+
+    public DetailedUser(String email, String password, String firstName) {
+        super(email, password, firstName);
+    }
 }

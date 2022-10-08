@@ -20,8 +20,15 @@ public class BaseUser {
     private String lastName;
     private boolean enabled;
     private boolean banned;
+    //TODO enable and banned logic
     public BaseUser(String email, String password) {
         this.email = email;
         this.password = password;
+    }
+
+    public BaseUser(String email, String password, String firstName) {
+        this.email = email;
+        this.password = password;
+        this.firstName = firstName;
     }
 }

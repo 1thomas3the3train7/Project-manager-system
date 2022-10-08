@@ -29,4 +29,13 @@ public class UserRepositoryImpl implements UserRepository {
                 .getResultList().stream().findFirst().orElse(null);
         return shortUser;
     }
+
+    @Override
+    @Transactional
+    public ShortUser getShortUserByEmail(String email) {
+        final ShortUser shortUser = em.createQuery("SELECT u FROM ShortUser u WHERE u.email = ?1", ShortUser.class)
+                .setParameter(1,email)
+                .getResultList().stream().findFirst().orElse(null);
+        return shortUser;
+    }
 }

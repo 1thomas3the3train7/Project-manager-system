@@ -4,7 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a33d714b-088f-4f15-ae0c-4fd06cbfb237" name="Changes" comment="" />
+    <list default="true" id="a33d714b-088f-4f15-ae0c-4fd06cbfb237" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Model/Passport/BasePassport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Repository/BudgetRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Repository/PassportRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Repository/PlanRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/RepositoryImpl/BudgetRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/RepositoryImpl/PassportRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/RepositoryImpl/PlanRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/RepositoryImpl/ProjectRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/RepositoryImpl/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Config/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Config/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/DTO/RoleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/DTO/RoleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/DTO/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/DTO/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Grpc/GrpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Grpc/GrpcClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/DtoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/DtoUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/proto/User.proto" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/proto/User.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/test/java/com/example/authservice/AuthserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/test/java/com/example/authservice/AuthserviceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/Config/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/Config/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/src/test/java/com/example/projectservice/ProjectserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/src/test/java/com/example/projectservice/ProjectserviceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/DTO/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/DTO/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Grpc/GrpcServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Grpc/GrpcServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Model/User/BaseUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Model/User/BaseUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Model/User/DetailedUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Model/User/DetailedUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/RepositoryImpl/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/RepositoryImpl/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Service/DtoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Service/DtoUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/proto/User.proto" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/proto/User.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/test/java/com/example/userservice/UserserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/test/java/com/example/userservice/UserserviceApplicationTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,33 +85,43 @@
     </option>
   </component>
   <component name="ProjectId" id="2FXrRjGMEOfQNqryRqaEEIu11Zs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "C:/Users/maksi/Desktop/mysite/backend/MYSTORE",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "e7467006c8febd7c60d8a2cd8fc48ae2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/maksi/Desktop/mysite/backend/MYSTORE&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e7467006c8febd7c60d8a2cd8fc48ae2&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthserviceApplication (1)">
-    <configuration name="AuthserviceApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ProjectserviceApplicationTests.forProject">
+    <configuration name="AuthserviceApplicationTests.forGrpc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="authservice" />
       <extension name="coverage">
         <pattern>
@@ -84,20 +131,79 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.authservice" />
       <option name="MAIN_CLASS_NAME" value="com.example.authservice.AuthserviceApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="forGrpc" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthserviceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="AuthserviceApplicationTests.forReactive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="authservice" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authservice.AuthserviceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.authservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.authservice" />
+      <option name="MAIN_CLASS_NAME" value="com.example.authservice.AuthserviceApplicationTests" />
+      <option name="METHOD_NAME" value="forReactive" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthserviceApplicationTests.forValidate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="authservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.authservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.authservice" />
+      <option name="MAIN_CLASS_NAME" value="com.example.authservice.AuthserviceApplicationTests" />
+      <option name="METHOD_NAME" value="forValidate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectserviceApplicationTests.forProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="projectservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.projectservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.projectservice" />
+      <option name="MAIN_CLASS_NAME" value="com.example.projectservice.ProjectserviceApplicationTests" />
+      <option name="METHOD_NAME" value="forProject" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserserviceApplicationTests.forRepo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="userservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.userservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.userservice" />
+      <option name="MAIN_CLASS_NAME" value="com.example.userservice.UserserviceApplicationTests" />
+      <option name="METHOD_NAME" value="forRepo" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="AuthserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
+      <module name="authservice" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authservice.AuthserviceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,9 +237,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.ProjectserviceApplicationTests.forProject" />
+      <item itemvalue="JUnit.AuthserviceApplicationTests.forGrpc" />
+      <item itemvalue="JUnit.AuthserviceApplicationTests.forValidate" />
+      <item itemvalue="JUnit.UserserviceApplicationTests.forRepo" />
+      <item itemvalue="JUnit.AuthserviceApplicationTests.forReactive" />
+      <item itemvalue="Spring Boot.AuthserviceApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.ProjectserviceApplication" />
+      <item itemvalue="Spring Boot.ServerApplication" />
+      <item itemvalue="Spring Boot.UserserviceApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AuthserviceApplicationTests" />
+        <item itemvalue="JUnit.ProjectserviceApplicationTests.forProject" />
+        <item itemvalue="JUnit.AuthserviceApplicationTests.forGrpc" />
+        <item itemvalue="JUnit.UserserviceApplicationTests.forRepo" />
+        <item itemvalue="JUnit.AuthserviceApplicationTests.forValidate" />
+        <item itemvalue="JUnit.AuthserviceApplicationTests.forReactive" />
       </list>
     </recent_temporary>
   </component>
@@ -148,8 +270,25 @@
       <workItem from="1664649264783" duration="6716000" />
       <workItem from="1664701169495" duration="2419000" />
       <workItem from="1664719972767" duration="8058000" />
-      <workItem from="1664802385617" duration="6901000" />
+      <workItem from="1664802385617" duration="7770000" />
+      <workItem from="1664889889715" duration="13197000" />
+      <workItem from="1664910896852" duration="716000" />
+      <workItem from="1664967920280" duration="13493000" />
+      <workItem from="1665062342704" duration="12660000" />
+      <workItem from="1665128284782" duration="648000" />
+      <workItem from="1665134528068" duration="1647000" />
+      <workItem from="1665136193685" duration="10686000" />
+      <workItem from="1665158729518" duration="3830000" />
+      <workItem from="1665221425493" duration="9763000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1664821098689</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664821098689</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,5 +304,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>

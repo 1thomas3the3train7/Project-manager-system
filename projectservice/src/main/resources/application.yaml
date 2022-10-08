@@ -10,6 +10,9 @@ spring:
       hibernate:
         format_sql: true
         show_sql: true
+    hibernate:
+      ddl-auto: create-drop
+
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres?currentSchema=projectservice
     username: postgres

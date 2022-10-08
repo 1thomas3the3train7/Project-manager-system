@@ -2,6 +2,7 @@ package com.example.authservice.Service;
 
 import com.example.authservice.DTO.RoleDTO;
 import com.example.authservice.DTO.UserDTO;
+import com.google.gson.Gson;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
@@ -14,12 +15,13 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Date;
-import java.util.List;
+
 
 @Service
 public class JwtUtils {
     private final SecretKey jwtAccessToken;
     private final SecretKey jwtRefreshToken;
+    private final Gson gson = new Gson();
 
     public JwtUtils(@Value("${jwt.accessToken}")String jwtAccessToken, @Value("${jwt.refreshToken}") String jwtRefreshToken) {
         this.jwtAccessToken = Keys.hmacShaKeyFor(Decoders.BASE64.decode(jwtAccessToken));
@@ -27,33 +29,54 @@ public class JwtUtils {
     }
     public String generateAccessToken(final UserDTO userDTO){
         final LocalDateTime time = LocalDateTime.now();
-        final Instant accessInst = time.plusMinutes(5).atZone(ZoneId.systemDefault()).toInstant();
+        final Instant accessInst = time.plusMinutes(100).atZone(ZoneId.systemDefault()).toInstant();
         final Date accessTime = Date.from(accessInst);
         return Jwts.builder()
                 .setSubject(userDTO.getEmail())
                 .setExpiration(accessTime)
-                .claim("Roles",userDTO.getRoles())
+                .claim("roles",gson.toJson(userDTO.getRoles()))
+                .claim("type","access")
                 .signWith(jwtAccessToken)
                 .compact();
     }
     public String generateRefreshToken(final UserDTO userDTO){
         final LocalDateTime time = LocalDateTime.now();
-        final Instant refreshInst = time.plusDays(15).atZone(ZoneId.systemDefault()).toInstant();
+        final Instant refreshInst = time.plusDays(5).atZone(ZoneId.systemDefault()).toInstant();
         final Date refreshTime = Date.from(refreshInst);
         return Jwts.builder()
                 .setSubject(userDTO.getEmail())
                 .setExpiration(refreshTime)
+                .claim("roles",gson.toJson(userDTO.getRoles()))
+                .claim("type","refresh")
                 .signWith(jwtRefreshToken)
                 .compact();
     }
     public boolean validateAccessToken(final String accessToken){
-        return validateToken(accessToken,jwtAccessToken);
+        try {
+            final Claims claims = getAccessClaims(accessToken);
+            if(!((String) claims.get("type")).equals("access")){
+                return false;
+            }
+            return validateToken(accessToken,jwtAccessToken);
+        } catch (NullPointerException n){
+            n.printStackTrace();
+            System.out.println("null from validate");
+            return false;
+        }
     }
     public boolean validateRefreshToken(final String refreshToken){
+        final Claims claims = getAccessClaims(refreshToken);
+        if(!((String) claims.get("type")).equals("refresh")){
+            return false;
+        }
         return validateToken(refreshToken,jwtRefreshToken);
     }
     private boolean validateToken(final String typeToken,final Key key){
         try {
+            if(typeToken == null || typeToken.equals("")){
+                System.out.println("falsee");
+                return false;
+            }
             Jwts.parserBuilder()
                     .setSigningKey(key)
                     .build()
@@ -94,15 +117,15 @@ public class JwtUtils {
     }
     private RoleDTO[] getRoles(final Claims claims){
         try {
-            final List<String> roles = claims.get("roles",List.class);
-            final RoleDTO[] rolesDTO = new RoleDTO[roles.size()];
-            for(int i = 0;i < roles.size() - 1;i++){
-                rolesDTO[i] = new RoleDTO(roles.get(i));
-            }
-            return rolesDTO;
+            final RoleDTO[] roles = gson.fromJson((String) claims.get("roles"), RoleDTO[].class);
+            return roles;
         } catch (NullPointerException n){
             return null;
         }
+    }
+    public UserDTO parseRefreshToken(final String refresh){
+        final Claims claims = getRefreshClaims(refresh);
+        return new UserDTO(claims.getSubject(),getRoles(claims));
     }
 
 }

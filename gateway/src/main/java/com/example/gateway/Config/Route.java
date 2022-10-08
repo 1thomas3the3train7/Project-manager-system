@@ -18,6 +18,21 @@ public class Route {
                         .path("/login")
                         .filters(f -> f.setPath("/users/login"))
                         .uri("lb://authservice"))
+                .route(r -> r
+                        .path("/admin")
+                        .uri("lb://authservice"))
+                .route(r -> r
+                        .path("/admin1")
+                        .uri("lb://authservice"))
+                .route(r -> r
+                        .path("/auth")
+                        .uri("lb://authservice"))
+                .route(r -> r
+                        .path("/getrefreshtoken")
+                        .uri("lb://authservice"))
+                .route(r -> r
+                        .path("/mono")
+                        .uri("lb://authservice"))
                 .build();
     }
 }

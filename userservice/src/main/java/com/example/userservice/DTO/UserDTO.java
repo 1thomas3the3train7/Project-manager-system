@@ -18,4 +18,10 @@ public class UserDTO {
     private boolean enabled;
     private boolean banned;
     private RoleDTO[] roles;
+
+    public UserDTO(String email, String password, String firstName) {
+        this.email = email;
+        this.password = password;
+        this.firstName = firstName;
+    }
 }
