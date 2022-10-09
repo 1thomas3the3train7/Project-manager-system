@@ -5,19 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a33d714b-088f-4f15-ae0c-4fd06cbfb237" name="Changes" comment="add project model and fix authservice">
-      <change afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/DTO/ProjectDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/Config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/Controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reactclient/src/Pages/Auth/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reactclient/src/Pages/Auth/Register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reactclient/src/Route/AppRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reactclient/src/Route/Routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reactclient/src/forAxios/AxiosProp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reactclient/src/style/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Config/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Config/JwtFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/DTO/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/DTO/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/src/test/java/com/example/authservice/AuthserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/test/java/com/example/authservice/AuthserviceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/Config/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/Config/Route.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Model/User/DetailedUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Model/User/DetailedUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Model/UserGroup/DetailedUserGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Model/UserGroup/DetailedUserGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Repository/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/RepositoryImpl/RoleRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/RepositoryImpl/RoleRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/UserserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/UserserviceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +125,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AuthserviceApplicationTests.forController">
+  <component name="RunManager" selected="Spring Boot.UserserviceApplication">
     <configuration name="AuthserviceApplicationTests.forController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="authservice" />
       <extension name="coverage">
@@ -285,7 +287,9 @@
       <workItem from="1665221425493" duration="10101000" />
       <workItem from="1665260124498" duration="386000" />
       <workItem from="1665260528638" duration="68000" />
-      <workItem from="1665306191345" duration="3798000" />
+      <workItem from="1665306191345" duration="4075000" />
+      <workItem from="1665322637129" duration="5826000" />
+      <workItem from="1665330390766" duration="4429000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1664821098689</created>

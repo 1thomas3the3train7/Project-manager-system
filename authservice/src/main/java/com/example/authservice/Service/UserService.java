@@ -39,12 +39,12 @@ public class UserService {
         final String response = grpcClient.getUserByEmail(userDTO.getEmail());
         if(response == null || response.equals("null")){
             System.out.println("user not found");
-            return null;
+            return new JwtDTO("asds","asdasd");
         }
         final UserDTO userDTOfromBD = gson.fromJson(response, UserDTO.class);
         if(!encoder.matches(userDTO.getPassword(),userDTOfromBD.getPassword())){
             System.out.println("password encoded not same");
-            return null;
+            return new JwtDTO("asds","asdasd");
         }
         final String refreshToken = jwtUtils.generateRefreshToken(userDTO);
         redisRepository.save(userDTO.getEmail(),String.valueOf(refreshToken.hashCode())).subscribe(System.out::println);

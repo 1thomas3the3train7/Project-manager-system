@@ -24,11 +24,19 @@ public class JwtFilter implements WebFilter {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, WebFilterChain chain) {
         final String token = getBearerToken(exchange);
-        if(token != null && jwtUtils.validateAccessToken(token)){
+        System.out.println(exchange.getRequest().getPath());
+        System.out.println(exchange.getRequest().getHeaders());
+        System.out.println(token);
+        System.out.println(token == null);
+        if(token == null){
+            return chain.filter(exchange);
+        }
+        if(jwtUtils.validateAccessToken(token)){
             final Claims claims = jwtUtils.getAccessClaims(token);
             final JwtAuth jwtAuth = jwtUtils.generate(claims);
 
             if(jwtAuth.getRoles() == null){
+                System.out.println("f roles");
                 return chain.filter(exchange);
             }
 
@@ -36,13 +44,19 @@ public class JwtFilter implements WebFilter {
             return chain.filter(exchange).contextWrite(ReactiveSecurityContextHolder.withAuthentication(jwtAuth));
 
         }
+        System.out.println("end");
         return chain.filter(exchange);
     }
     private String getBearerToken(ServerWebExchange exchange){
-        final String[] token = exchange.getRequest().getHeaders().get("Authorization").get(0).split(" ");
-        if(token[0].equals("Bearer")){
-            return token[1];
+        try{
+            final String[] token = exchange.getRequest().getHeaders().get("Authorization").get(0).split(" ");
+            if(token[0].equals("Bearer")){
+                return token[1];
+            }
+            return null;
+        } catch (NullPointerException n){
+            n.printStackTrace();
+            return null;
         }
-        return null;
     }
 }

@@ -25,6 +25,7 @@ public class UserController {
     }
     @PostMapping(value = "/users/login")
     public Mono<JwtDTO> login(@RequestBody String request){
+        System.out.println("Asdsad");
         return Mono.just(userService.loginUser(request));
     }
     @PostMapping(value = "/admin")
@@ -48,5 +49,10 @@ public class UserController {
     @PostMapping(value = "/user")
     public Mono<String> user(Principal principal){
         return Mono.just(principal.getName());
+    }
+    @PostMapping(value = "/test2")
+    public Mono<String> test2(@RequestBody String body){
+        System.out.println(body);
+        return Mono.just("test2");
     }
 }

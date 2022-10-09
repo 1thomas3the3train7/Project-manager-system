@@ -4,6 +4,10 @@ import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.cors.CorsConfiguration;
+
+import java.util.Arrays;
+import java.util.List;
 
 @Configuration
 public class Route {
@@ -35,6 +39,10 @@ public class Route {
                         .uri("lb://authservice"))
                 .route(r -> r
                         .path("/register")
+                        .uri("lb://authservice"))
+                .route(r -> r
+                        .path("/test22")
+                        .filters(f -> f.setPath("/test2"))
                         .uri("lb://authservice"))
                 .build();
     }
