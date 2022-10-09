@@ -1,5 +1,6 @@
 package com.example.authservice;
 
+import com.example.authservice.Controllers.UserController;
 import com.example.authservice.DTO.RoleDTO;
 import com.example.authservice.DTO.UserDTO;
 import com.example.authservice.Grpc.GrpcClient;
@@ -29,6 +30,8 @@ class AuthserviceApplicationTests {
 	private UserService userService;
 	@Autowired
 	private EmailValidator emailValidator;
+	@Autowired
+	private UserController userController;
 
 	private final Gson gson = new Gson();
 	@Test
@@ -101,7 +104,11 @@ class AuthserviceApplicationTests {
 			String response = grpcClient.getUserByEmail("emaissdadsl");
 			System.out.println(response);
 		}
-
+	}
+	@Test
+	void forController(){
+		UserDTO userDTO = new UserDTO("mercyfirsov@gmail.com","vladpidor");
+		userController.register(gson.toJson(userDTO));
 	}
 
 

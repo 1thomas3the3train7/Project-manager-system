@@ -2,6 +2,7 @@ package com.example.userservice.RepositoryImpl;
 
 import com.example.userservice.Model.Role.BaseRole;
 import com.example.userservice.Model.Role.ShortRole;
+import com.example.userservice.Model.User.BaseUser;
 import com.example.userservice.Model.User.ShortUser;
 import com.example.userservice.Repository.RoleRepository;
 import org.springframework.stereotype.Repository;
@@ -37,7 +38,7 @@ public class RoleRepositoryImpl implements RoleRepository {
 
     @Override
     @Transactional
-    public void appendUserAndRole(Integer user_id, Integer role_id) {
+    public void appendUserAndRole(final int user_id,final int role_id) {
         em.createNativeQuery("INSERT INTO user_and_role (user_id,role_id) VALUES(?1,?2)")
                 .setParameter(1,user_id)
                 .setParameter(2,role_id)
@@ -46,10 +47,10 @@ public class RoleRepositoryImpl implements RoleRepository {
 
     @Override
     @Transactional
-    public void appendUserAndRole(ShortUser shortUser, ShortRole shortRole) {
+    public void appendUserAndRole(final BaseUser baseUser, final BaseRole baseRole) {
         em.createNativeQuery("INSERT INTO user_and_role (user_id,role_id) VALUES(?1,?2)")
-                .setParameter(1,shortUser.getId())
-                .setParameter(2,shortRole.getId())
+                .setParameter(1,baseUser.getId())
+                .setParameter(2,baseRole.getId())
                 .executeUpdate();
     }
 }

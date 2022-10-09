@@ -23,12 +23,6 @@ public class UserController {
         this.userService = userService;
         this.redisRepository = redisRepository;
     }
-
-    @GetMapping(value = "/users/get")
-    public String getUser(){
-        ReactiveSecurityContextHolder.getContext().subscribe(System.out::println);
-        return userService.getUserByEmail("email");
-    }
     @PostMapping(value = "/users/login")
     public Mono<JwtDTO> login(@RequestBody String request){
         return Mono.just(userService.loginUser(request));
@@ -38,11 +32,6 @@ public class UserController {
         System.out.println(principal.getName());
         System.out.println("asdasd");
         return Mono.just("admin");
-    }
-    @PostMapping(value = "/admin1")
-    public Mono<String> admin1(){
-        System.out.println("admin1");
-        return Mono.just("admin1");
     }
     @PostMapping(value = "/auth")
     public Mono<String> auth(){
@@ -56,13 +45,8 @@ public class UserController {
     public Mono<String> register(@RequestBody String request){
         return Mono.just(userService.registerAndValid(request));
     }
-    @PostMapping(value = "/mono")
-    public Mono<JwtDTO> getw(){
-        return Mono.fromCallable(() -> {
-            JwtDTO jwtDTO = new JwtDTO();
-            /*jwtDTO.setAccessToken(redisRepository.get("key1").subscribe());*/
-            jwtDTO.setRefreshToken("refresh");
-            return jwtDTO;
-        });
+    @PostMapping(value = "/user")
+    public Mono<String> user(Principal principal){
+        return Mono.just(principal.getName());
     }
 }

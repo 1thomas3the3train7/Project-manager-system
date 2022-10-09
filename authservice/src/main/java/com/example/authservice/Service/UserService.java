@@ -46,9 +46,6 @@ public class UserService {
             System.out.println("password encoded not same");
             return null;
         }
-        RoleDTO[] roleDTOS = new RoleDTO[1];
-        roleDTOS[0] = new RoleDTO("ROLE_ADMIN");
-        userDTO.setRoles(roleDTOS);
         final String refreshToken = jwtUtils.generateRefreshToken(userDTO);
         redisRepository.save(userDTO.getEmail(),String.valueOf(refreshToken.hashCode())).subscribe(System.out::println);
         System.out.println("was save");
@@ -86,11 +83,15 @@ public class UserService {
     public String registerAndValid(final String request){
         try {
             final UserDTO userDTO = gson.fromJson(request,UserDTO.class);
+            System.out.println(userDTO.getEmail());
+            System.out.println(userDTO.getPassword());
+            userDTO.setFirstName("firstName");
             if(emailValidator.validateEmail(userDTO.getEmail()) && userDTO.getPassword().length() > 5){
                 return registerUser(userDTO);
             }
             return "Non correct email or password";
         } catch (NullPointerException n){
+            n.printStackTrace();
             return "Non correct email or password";
         }
     }

@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a33d714b-088f-4f15-ae0c-4fd06cbfb237" name="Changes" comment="add project model and fix authservice" />
+    <list default="true" id="a33d714b-088f-4f15-ae0c-4fd06cbfb237" name="Changes" comment="add project model and fix authservice">
+      <change afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/DTO/ProjectDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/DTO/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/DTO/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/main/java/com/example/authservice/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/src/test/java/com/example/authservice/AuthserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/src/test/java/com/example/authservice/AuthserviceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/Config/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/Config/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Model/User/DetailedUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Model/User/DetailedUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Model/UserGroup/DetailedUserGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/src/main/java/com/example/projectservice/Model/UserGroup/DetailedUserGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/RepositoryImpl/RoleRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/RepositoryImpl/RoleRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/UserserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/UserserviceApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +33,32 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="devv" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
@@ -83,7 +123,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProjectserviceApplicationTests.forProject">
+  <component name="RunManager" selected="JUnit.AuthserviceApplicationTests.forController">
+    <configuration name="AuthserviceApplicationTests.forController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="authservice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.authservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.authservice" />
+      <option name="MAIN_CLASS_NAME" value="com.example.authservice.AuthserviceApplicationTests" />
+      <option name="METHOD_NAME" value="forController" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AuthserviceApplicationTests.forGrpc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="authservice" />
       <extension name="coverage">
@@ -95,22 +151,6 @@
       <option name="PACKAGE_NAME" value="com.example.authservice" />
       <option name="MAIN_CLASS_NAME" value="com.example.authservice.AuthserviceApplicationTests" />
       <option name="METHOD_NAME" value="forGrpc" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AuthserviceApplicationTests.forReactive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="authservice" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.authservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.authservice" />
-      <option name="MAIN_CLASS_NAME" value="com.example.authservice.AuthserviceApplicationTests" />
-      <option name="METHOD_NAME" value="forReactive" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -201,11 +241,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.AuthserviceApplicationTests.forController" />
       <item itemvalue="JUnit.ProjectserviceApplicationTests.forProject" />
       <item itemvalue="JUnit.AuthserviceApplicationTests.forGrpc" />
       <item itemvalue="JUnit.AuthserviceApplicationTests.forValidate" />
       <item itemvalue="JUnit.UserserviceApplicationTests.forRepo" />
-      <item itemvalue="JUnit.AuthserviceApplicationTests.forReactive" />
       <item itemvalue="Spring Boot.AuthserviceApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.ProjectserviceApplication" />
@@ -214,11 +254,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AuthserviceApplicationTests.forController" />
         <item itemvalue="JUnit.ProjectserviceApplicationTests.forProject" />
         <item itemvalue="JUnit.AuthserviceApplicationTests.forGrpc" />
         <item itemvalue="JUnit.UserserviceApplicationTests.forRepo" />
         <item itemvalue="JUnit.AuthserviceApplicationTests.forValidate" />
-        <item itemvalue="JUnit.AuthserviceApplicationTests.forReactive" />
       </list>
     </recent_temporary>
   </component>
@@ -243,6 +283,9 @@
       <workItem from="1665136193685" duration="10686000" />
       <workItem from="1665158729518" duration="3830000" />
       <workItem from="1665221425493" duration="10101000" />
+      <workItem from="1665260124498" duration="386000" />
+      <workItem from="1665260528638" duration="68000" />
+      <workItem from="1665306191345" duration="3798000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1664821098689</created>
@@ -269,7 +312,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="devv" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

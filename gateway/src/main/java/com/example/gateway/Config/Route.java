@@ -33,6 +33,9 @@ public class Route {
                 .route(r -> r
                         .path("/mono")
                         .uri("lb://authservice"))
+                .route(r -> r
+                        .path("/register")
+                        .uri("lb://authservice"))
                 .build();
     }
 }

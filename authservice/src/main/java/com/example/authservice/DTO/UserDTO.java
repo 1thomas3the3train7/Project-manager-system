@@ -24,4 +24,9 @@ public class UserDTO {
         this.email = email;
         this.roles = roles;
     }
+
+    public UserDTO(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
 }

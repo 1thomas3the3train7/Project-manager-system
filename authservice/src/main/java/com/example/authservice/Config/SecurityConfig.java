@@ -34,8 +34,8 @@ public class SecurityConfig {
                 .httpBasic().disable()
                 .securityContextRepository(NoOpServerSecurityContextRepository.getInstance())
                 .authorizeExchange(authorizeExchangeSpec -> authorizeExchangeSpec
-                        .pathMatchers("/admin1").hasAuthority("ROLE_TEST")
                         .pathMatchers("/admin").hasAuthority("ROLE_ADMIN")
+                        .pathMatchers("/user").hasAuthority("ROLE_USER")
                         .pathMatchers("/auth").authenticated()
                         .pathMatchers("/**").permitAll())
 
