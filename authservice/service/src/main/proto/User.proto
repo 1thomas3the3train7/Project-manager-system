@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "Grpc";
+
+message UserGetRequest{
+  string email = 1;
+}
+
+message UserGetResponse{
+  string response = 1;
+}
+service UserService{
+  rpc getUserByEmail(UserGetRequest) returns(UserGetResponse);
+}
