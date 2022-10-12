@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/authservice/auth_Controllers/auth_Controllers.iml" filepath="$PROJECT_DIR$/authservice/auth_Controllers/auth_Controllers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/authservice/auth_Data/auth_Data.iml" filepath="$PROJECT_DIR$/authservice/auth_Data/auth_Data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/authservice/auth_Repository/auth_Repository.iml" filepath="$PROJECT_DIR$/authservice/auth_Repository/auth_Repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/authservice/auth_Service/auth_Service.iml" filepath="$PROJECT_DIR$/authservice/auth_Service/auth_Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/authservice/authservice.iml" filepath="$PROJECT_DIR$/authservice/authservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projectservice/projectservice.iml" filepath="$PROJECT_DIR$/projectservice/projectservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userservice/user_Data/user_Data.iml" filepath="$PROJECT_DIR$/userservice/user_Data/user_Data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userservice/user_Repository/user_Repository.iml" filepath="$PROJECT_DIR$/userservice/user_Repository/user_Repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userservice/user_Service/user_Service.iml" filepath="$PROJECT_DIR$/userservice/user_Service/user_Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userservice/userservice.iml" filepath="$PROJECT_DIR$/userservice/userservice.iml" />
+    </modules>
+  </component>
+</project>

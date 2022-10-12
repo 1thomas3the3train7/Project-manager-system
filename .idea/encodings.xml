@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/authservice/auth_Controllers/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/authservice/auth_Data/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/authservice/auth_Repository/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/authservice/auth_Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/authservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/authservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projectservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/projectservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userservice/user_Data/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userservice/user_Repository/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userservice/user_Service/src/main/java" charset="UTF-8" />
+  </component>
+</project>

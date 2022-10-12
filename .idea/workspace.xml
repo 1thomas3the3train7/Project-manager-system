@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bbe44385-f810-4fdb-adb3-60347a5aa80a" name="Changes" comment="add project model and fix authservice">
+      <change afterPath="$PROJECT_DIR$/userservice/user_Data/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/user_Data/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/user_Repository/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/user_Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/DTO/RoleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/DTO/RoleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/DTO/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/DTO/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Grpc/GrpcServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/Grpc/GrpcServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Model/Role/BaseRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Repository/src/main/java/com/example/userservice/Model/Role/BaseRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Model/Role/DetailedRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Repository/src/main/java/com/example/userservice/Model/Role/DetailedRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Model/Role/ShortRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Repository/src/main/java/com/example/userservice/Model/Role/ShortRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Model/User/BaseUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Repository/src/main/java/com/example/userservice/Model/User/BaseUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Model/User/DetailedUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Repository/src/main/java/com/example/userservice/Model/User/DetailedUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Model/User/ShortUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Repository/src/main/java/com/example/userservice/Model/User/ShortUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Repository/src/main/java/com/example/userservice/Repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Repository/src/main/java/com/example/userservice/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/RepositoryImpl/RoleRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Repository/src/main/java/com/example/userservice/RepositoryImpl/RoleRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/RepositoryImpl/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Repository/src/main/java/com/example/userservice/RepositoryImpl/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Service/DtoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/Service/DtoUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/java/com/example/userservice/UserserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/UserserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/proto/User.proto" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/proto/User.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/src/test/java/com/example/userservice/UserserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/src/test/java/com/example/userservice/UserserviceApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="devv" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2FXrRjGMEOfQNqryRqaEEIu11Zs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "18",
+    "last_opened_file_path": "C:/Users/maksi/Desktop/pms",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.scopes",
+    "spring.configuration.checksum": "9de6734b0c6e33068748273fabc36fc0"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\maksi\Desktop\pms\authservice\auth_Controllers\src" />
+      <recent name="C:\Users\maksi\Desktop\pms\authservice\auth_Service\src\main\java\proto" />
+      <recent name="C:\Users\maksi\Desktop\pms\authservice\auth_Service\src\main\java\com.example.authservice" />
+      <recent name="C:\Users\maksi\Desktop\pms\authservice\auth_Controllers\src\main\java\com.example.authservice" />
+      <recent name="C:\Users\maksi\Desktop\pms\authservice\auth_Controllers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maksi\Desktop\pms\authservice\auth_Service\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.userservice.Service" />
+      <recent name="com.example.authservice" />
+      <recent name="" />
+      <recent name="com.example.authservice.Validate" />
+      <recent name="com.example.authservice.Grpc" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="UserserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="user_Service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.userservice.UserserviceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.userservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.UserserviceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbe44385-f810-4fdb-adb3-60347a5aa80a" name="Changes" comment="" />
+      <created>1664649263519</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664649263519</updated>
+      <workItem from="1664649264783" duration="6716000" />
+      <workItem from="1664701169495" duration="2419000" />
+      <workItem from="1664719972767" duration="8058000" />
+      <workItem from="1664802385617" duration="7770000" />
+      <workItem from="1664889889715" duration="13197000" />
+      <workItem from="1664910896852" duration="716000" />
+      <workItem from="1664967920280" duration="13493000" />
+      <workItem from="1665062342704" duration="12660000" />
+      <workItem from="1665128284782" duration="648000" />
+      <workItem from="1665134528068" duration="1647000" />
+      <workItem from="1665136193685" duration="10686000" />
+      <workItem from="1665158729518" duration="3830000" />
+      <workItem from="1665221425493" duration="10101000" />
+      <workItem from="1665260124498" duration="386000" />
+      <workItem from="1665260528638" duration="68000" />
+      <workItem from="1665306191345" duration="4075000" />
+      <workItem from="1665322637129" duration="5826000" />
+      <workItem from="1665330390766" duration="4429000" />
+      <workItem from="1665511794254" duration="51000" />
+      <workItem from="1665511858529" duration="2569000" />
+      <workItem from="1665514451467" duration="3471000" />
+      <workItem from="1665518312886" duration="185000" />
+      <workItem from="1665562465790" duration="2122000" />
+      <workItem from="1665576803384" duration="475000" />
+      <workItem from="1665594892663" duration="2820000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1664821098689</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664821098689</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add project model and fix authservice">
+      <created>1665235434421</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665235434421</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="devv" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="add project model and fix authservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="add project model and fix authservice" />
+  </component>
+</project>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auth_Repository" />
+        <module name="server" />
+        <module name="user_Repository" />
+        <module name="user_Data" />
+        <module name="projectservice" />
+        <module name="user_Service" />
+        <module name="auth_Controllers" />
+        <module name="auth_Service" />
+        <module name="auth_Data" />
+        <module name="authservice (2)" />
+        <module name="gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth_Controllers" target="17" />
+      <module name="auth_Data" target="17" />
+      <module name="auth_Repository" target="17" />
+      <module name="auth_Service" target="17" />
+      <module name="authservice" target="17" />
+      <module name="authservice (1)" target="17" />
+      <module name="authservice (2)" target="17" />
+      <module name="gateway" target="17" />
+      <module name="projectservice" target="17" />
+      <module name="server" target="17" />
+      <module name="user_Data" target="17" />
+      <module name="user_Repository" target="17" />
+      <module name="user_Service" target="17" />
+      <module name="userservice" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth_Controllers" options="-parameters" />
+      <module name="auth_Data" options="-parameters" />
+      <module name="auth_Repository" options="-parameters" />
+      <module name="auth_Service" options="-parameters" />
+      <module name="authservice" options="" />
+      <module name="authservice (1)" options="-parameters" />
+      <module name="authservice (2)" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="projectservice" options="-parameters" />
+      <module name="server" options="-parameters" />
+      <module name="user_Data" options="-parameters" />
+      <module name="user_Repository" options="-parameters" />
+      <module name="user_Service" options="-parameters" />
+      <module name="userservice" options="" />
+    </option>
+  </component>
+</project>
