@@ -41,8 +41,7 @@ public class Route {
                         .path("/register")
                         .uri("lb://authservice"))
                 .route(r -> r
-                        .path("/test22")
-                        .filters(f -> f.setPath("/test2"))
+                        .path("/test2")
                         .uri("lb://authservice"))
                 .build();
     }

@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export const mainUrl = "http://localhost:8082";
+export const mainUrl1 = "http://localhost:8083";
 
 export const authPost =axios.create({
     baseURL:mainUrl,

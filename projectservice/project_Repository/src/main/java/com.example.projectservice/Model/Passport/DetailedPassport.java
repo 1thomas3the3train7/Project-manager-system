@@ -18,6 +18,10 @@ import java.util.Date;
 @NoArgsConstructor
 @Table(name = "passport")
 public class DetailedPassport extends BasePassport {
+    public DetailedPassport(String description, Date dateStart, Date dateEnd) {
+        super(description, dateStart, dateEnd);
+    }
+
     @CreationTimestamp
     private Date dateCreate;
     @UpdateTimestamp

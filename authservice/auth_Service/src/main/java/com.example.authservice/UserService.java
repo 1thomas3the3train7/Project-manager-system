@@ -83,7 +83,6 @@ public class UserService {
             final UserDTO userDTO = gson.fromJson(request,UserDTO.class);
             System.out.println(userDTO.getEmail());
             System.out.println(userDTO.getPassword());
-            userDTO.setFirstName("firstName");
             if(emailValidator.validateEmail(userDTO.getEmail()) && userDTO.getPassword().length() > 5){
                 return registerUser(userDTO);
             }

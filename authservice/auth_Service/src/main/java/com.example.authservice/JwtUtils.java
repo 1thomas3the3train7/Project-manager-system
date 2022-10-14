@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.crypto.SecretKey;
+import javax.naming.MalformedLinkException;
 import java.security.Key;
 import java.time.Instant;
 import java.time.LocalDateTime;
@@ -103,11 +104,17 @@ public class JwtUtils {
     }
 
     private Claims getClaims(final String token, final Key secret) {
-        return Jwts.parserBuilder()
-                .setSigningKey(secret)
-                .build()
-                .parseClaimsJws(token)
-                .getBody();
+        try {
+            return Jwts.parserBuilder()
+                    .setSigningKey(secret)
+                    .build()
+                    .parseClaimsJws(token)
+                    .getBody();
+        } catch (MalformedJwtException m){
+            System.out.println("jwt not parse");
+            m.printStackTrace();
+            return null;
+        }
     }
     public JwtAuth generate(final Claims claims){
         final JwtAuth jwtAuth = new JwtAuth();

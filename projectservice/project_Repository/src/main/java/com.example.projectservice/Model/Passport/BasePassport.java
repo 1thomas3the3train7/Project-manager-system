@@ -17,5 +17,12 @@ public class BasePassport {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String description;
-    private Date duration;
+    private Date dateStart;
+    private Date dateEnd;
+
+    public BasePassport(String description, Date dateStart, Date dateEnd) {
+        this.description = description;
+        this.dateStart = dateStart;
+        this.dateEnd = dateEnd;
+    }
 }

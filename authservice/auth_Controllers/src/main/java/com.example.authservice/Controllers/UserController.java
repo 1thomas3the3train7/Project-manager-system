@@ -3,6 +3,7 @@ package com.example.authservice.Controllers;
 import com.example.authservice.DTO.JwtDTO;
 import com.example.authservice.RedisRepository;
 import com.example.authservice.UserService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -40,6 +41,7 @@ public class UserController {
     }
     @PostMapping(value = "/register")
     public Mono<String> register(@RequestBody String request){
+        System.out.println("adasdasd");
         return Mono.just(userService.registerAndValid(request));
     }
     @PostMapping(value = "/user")

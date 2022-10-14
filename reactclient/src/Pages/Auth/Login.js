@@ -13,7 +13,7 @@ class Login extends Component {
     }
     auth() {
         console.log("click")
-        authPost.post(mainUrl + "/test22", {email:this.state.email,password:this.state.password},{headers:{
+        authPost.post(mainUrl + "/login", {email:this.state.email,password:this.state.password},{headers:{
                 'Content-Type': 'application/json'
             }})
             .then(res => {
