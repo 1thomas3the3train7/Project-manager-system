@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/authservice/auth_Service/auth_Service.iml" filepath="$PROJECT_DIR$/authservice/auth_Service/auth_Service.iml" />
       <module fileurl="file://$PROJECT_DIR$/authservice/authservice.iml" filepath="$PROJECT_DIR$/authservice/authservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projectservice/project_Data/project_Data.iml" filepath="$PROJECT_DIR$/projectservice/project_Data/project_Data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projectservice/project_Repository/project_Repository.iml" filepath="$PROJECT_DIR$/projectservice/project_Repository/project_Repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projectservice/project_Service/project_Service.iml" filepath="$PROJECT_DIR$/projectservice/project_Service/project_Service.iml" />
       <module fileurl="file://$PROJECT_DIR$/projectservice/projectservice.iml" filepath="$PROJECT_DIR$/projectservice/projectservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
       <module fileurl="file://$PROJECT_DIR$/userservice/user_Data/user_Data.iml" filepath="$PROJECT_DIR$/userservice/user_Data/user_Data.iml" />

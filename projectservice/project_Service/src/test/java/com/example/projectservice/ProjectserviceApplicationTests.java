@@ -28,7 +28,7 @@ class ProjectserviceApplicationTests {
 	}
 	@Test
 	void forProject(){
-		for(int i = 0; i < 1000;i++){
+		/*for(int i = 0; i < 1000;i++){
 			DetailedProject detailedProject = new DetailedProject();
 			detailedProject.setName("name");
 			DetailedPassport detailedPassport = new DetailedPassport();
@@ -50,7 +50,7 @@ class ProjectserviceApplicationTests {
 			planRepository.appendProjectAndPlan(detailedProject.getId(),detailedPlan.getId());
 			DetailedProject detailedProject1 = projectRepository.getDetailedProjectByName("name");
 			System.out.println(detailedProject1.getBudget().getMoney());
-		}
+		}*/
 
 	}
 

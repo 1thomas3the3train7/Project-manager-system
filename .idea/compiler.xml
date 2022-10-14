@@ -9,15 +9,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="auth_Repository" />
         <module name="server" />
-        <module name="user_Repository" />
-        <module name="user_Data" />
-        <module name="projectservice" />
+        <module name="project_Repository" />
         <module name="user_Service" />
         <module name="auth_Controllers" />
         <module name="auth_Service" />
-        <module name="auth_Data" />
         <module name="authservice (2)" />
+        <module name="user_Repository" />
+        <module name="user_Data" />
+        <module name="project_Data" />
+        <module name="auth_Data" />
         <module name="gateway" />
+        <module name="project_Service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,6 +31,9 @@
       <module name="authservice (1)" target="17" />
       <module name="authservice (2)" target="17" />
       <module name="gateway" target="17" />
+      <module name="project_Data" target="17" />
+      <module name="project_Repository" target="17" />
+      <module name="project_Service" target="17" />
       <module name="projectservice" target="17" />
       <module name="server" target="17" />
       <module name="user_Data" target="17" />
@@ -47,7 +52,10 @@
       <module name="authservice (1)" options="-parameters" />
       <module name="authservice (2)" options="-parameters" />
       <module name="gateway" options="-parameters" />
-      <module name="projectservice" options="-parameters" />
+      <module name="project_Data" options="-parameters" />
+      <module name="project_Repository" options="-parameters" />
+      <module name="project_Service" options="-parameters" />
+      <module name="projectservice" options="" />
       <module name="server" options="-parameters" />
       <module name="user_Data" options="-parameters" />
       <module name="user_Repository" options="-parameters" />

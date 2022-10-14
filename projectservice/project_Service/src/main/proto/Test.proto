@@ -1,8 +1,6 @@
 syntax = "proto3";
 
-package com.example.projectservice.Grpc;
-
-option java_package = "com.example.projectservice.Grpc";
+option java_package = "Grpc";
 
 message testRequest{
   string key1 = 1;

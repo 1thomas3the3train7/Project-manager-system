@@ -1,5 +1,7 @@
 package com.example.projectservice.Grpc;
 
+import Grpc.Test;
+import Grpc.TestServiceGrpc;
 import io.grpc.stub.StreamObserver;
 import net.devh.boot.grpc.server.service.GrpcService;
 
