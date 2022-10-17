@@ -43,6 +43,9 @@ public class Route {
                 .route(r -> r
                         .path("/test2")
                         .uri("lb://authservice"))
+                .route(r -> r
+                        .path("/search/user")
+                        .uri("lb://authservice"))
                 .build();
     }
 }

@@ -25,4 +25,8 @@ public class BasePassport {
         this.dateStart = dateStart;
         this.dateEnd = dateEnd;
     }
+
+    public BasePassport(String description) {
+        this.description = description;
+    }
 }

@@ -22,6 +22,10 @@ public class DetailedPassport extends BasePassport {
         super(description, dateStart, dateEnd);
     }
 
+    public DetailedPassport(String description) {
+        super(description);
+    }
+
     @CreationTimestamp
     private Date dateCreate;
     @UpdateTimestamp

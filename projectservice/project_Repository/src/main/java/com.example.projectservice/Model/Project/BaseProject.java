@@ -17,5 +17,9 @@ public class BaseProject {
     private Integer id;
     private String name;
     private String customer;
-    
+
+    public BaseProject(String name, String customer) {
+        this.name = name;
+        this.customer = customer;
+    }
 }

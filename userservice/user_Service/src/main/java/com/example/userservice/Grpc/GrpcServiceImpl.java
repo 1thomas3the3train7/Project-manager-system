@@ -1,8 +1,8 @@
 package com.example.userservice.Grpc;
 
 
-import com.example.authservice.Grpc.User;
-import com.example.authservice.Grpc.UserServiceGrpc;
+import Grpc.User;
+import Grpc.UserServiceGrpc;
 import com.example.userservice.Service.UserService;
 import io.grpc.stub.StreamObserver;
 import net.devh.boot.grpc.server.service.GrpcService;
@@ -31,6 +31,16 @@ public class GrpcServiceImpl extends UserServiceGrpc.UserServiceImplBase{
                         request.getEmail(),
                         request.getPassword(),
                         request.getName()))
+                .build();
+
+        responseObserver.onNext(response);
+        responseObserver.onCompleted();
+    }
+
+    @Override
+    public void searchUser(User.SearchUserRequest request, StreamObserver<User.SearchUserResponse> responseObserver) {
+        final User.SearchUserResponse response = User.SearchUserResponse.newBuilder()
+                .setResponse(userService.searchUser(request.getName()))
                 .build();
 
         responseObserver.onNext(response);

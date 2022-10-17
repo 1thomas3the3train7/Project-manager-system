@@ -16,4 +16,8 @@ public class BasePlan {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String description;
+
+    public BasePlan(String description) {
+        this.description = description;
+    }
 }

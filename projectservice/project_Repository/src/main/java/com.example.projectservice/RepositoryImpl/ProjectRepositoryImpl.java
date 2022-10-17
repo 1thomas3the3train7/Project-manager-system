@@ -20,6 +20,11 @@ public class ProjectRepositoryImpl implements ProjectRepository {
     }
 
     @Override
+    public void saveWT(BaseProject baseProject) {
+        em.persist(baseProject);
+    }
+
+    @Override
     @Transactional
     public void delete(BaseProject baseProject) {
         em.remove(em.contains(baseProject) ? baseProject : em.merge(baseProject));

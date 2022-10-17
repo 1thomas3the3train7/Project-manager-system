@@ -3,7 +3,9 @@ package com.example.authservice.Grpc;
 import Grpc.User;
 import Grpc.UserServiceGrpc;
 import com.example.authservice.DTO.UserDTO;
+import com.example.authservice.DTO.UserSearchDTO;
 import com.google.common.util.concurrent.ListenableFuture;
+import com.google.gson.Gson;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.ExecutionException;
@@ -13,6 +15,7 @@ import java.util.concurrent.ExecutionException;
 public class GrpcClient {
     @net.devh.boot.grpc.client.inject.GrpcClient("user-service")
     private UserServiceGrpc.UserServiceFutureStub userServiceFutureStub;
+    private final Gson gson = new Gson();
 
     public String getUserByEmail(final String email){
         try {
@@ -44,6 +47,22 @@ public class GrpcClient {
             return "FAIL";
         } catch (InterruptedException e) {
             e.printStackTrace();
+            return "FAIL";
+        }
+    }
+    public String searchUser(final UserSearchDTO userSearchDTO){
+        try {
+            System.out.println(gson.toJson(userSearchDTO));
+            final ListenableFuture<User.SearchUserResponse> response = userServiceFutureStub.searchUser(
+                    User.SearchUserRequest.newBuilder()
+                            .setName(gson.toJson(userSearchDTO))
+                            .build());
+            return response.get().getResponse();
+        } catch (ExecutionException e){
+            e.printStackTrace();
+            return "FAIL";
+        } catch (InterruptedException i){
+            i.printStackTrace();
             return "FAIL";
         }
     }

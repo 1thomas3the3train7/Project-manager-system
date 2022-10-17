@@ -1,7 +1,7 @@
 package com.example.projectservice.Model.UserGroup;
 
 import com.example.projectservice.Model.Task.DetailedTask;
-import com.example.projectservice.Model.User.DetailedUsers;
+import com.example.projectservice.Model.User.DetailedUser;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -28,5 +28,5 @@ public class DetailedUserGroup extends UserGroup {
     private Set<DetailedTask> tasks;
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "user_and_group",joinColumns = @JoinColumn(name = "group_id"),inverseJoinColumns = @JoinColumn(name = "user_id"))
-    private Set<DetailedUsers> users;
+    private Set<DetailedUser> users;
 }

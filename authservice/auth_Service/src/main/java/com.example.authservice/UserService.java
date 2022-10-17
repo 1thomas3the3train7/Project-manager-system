@@ -2,12 +2,14 @@ package com.example.authservice;
 
 import com.example.authservice.DTO.JwtDTO;
 import com.example.authservice.DTO.UserDTO;
+import com.example.authservice.DTO.UserSearchDTO;
 import com.example.authservice.Grpc.GrpcClient;
 import com.example.authservice.Validate.EmailValidator;
 import com.google.gson.Gson;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 @Service
@@ -95,5 +97,15 @@ public class UserService {
     private String registerUser(final UserDTO userDTO){
         userDTO.setPassword(encoder.encode(userDTO.getPassword()));
         return grpcClient.userSave(userDTO);
+    }
+    public String searchUserAndValid(final String request){
+        if(request == null){
+            return null;
+        }
+        final UserSearchDTO userSearchDTO = gson.fromJson(request, UserSearchDTO.class);
+        if(userSearchDTO.getName() == null){
+            return null;
+        }
+        return grpcClient.searchUser(userSearchDTO);
     }
 }

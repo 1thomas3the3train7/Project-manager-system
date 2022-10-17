@@ -1,6 +1,7 @@
 package com.example.authservice.Controllers;
 
 import com.example.authservice.DTO.JwtDTO;
+import com.example.authservice.DTO.UserDTO;
 import com.example.authservice.RedisRepository;
 import com.example.authservice.UserService;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
 import java.security.Principal;
+import java.util.List;
 
 @RestController
 public class UserController {
@@ -52,5 +54,9 @@ public class UserController {
     public Mono<String> test2(@RequestBody String body){
         System.out.println(body);
         return Mono.just("test2");
+    }
+    @PostMapping(value = "/search/user")
+    public Mono<String> searchUser(@RequestBody String request){
+        return Mono.just(userService.searchUserAndValid(request));
     }
 }

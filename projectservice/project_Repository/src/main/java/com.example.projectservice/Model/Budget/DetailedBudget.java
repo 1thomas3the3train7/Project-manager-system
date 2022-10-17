@@ -28,4 +28,8 @@ public class DetailedBudget extends BaseBudget {
     @JoinTable(name = "budget_and_cost",joinColumns = @JoinColumn(name = "budget_id"),
             inverseJoinColumns = @JoinColumn(name = "cost_id"))
     private List<DetailedCost> costs;
+
+    public DetailedBudget(Integer money) {
+        super(money);
+    }
 }

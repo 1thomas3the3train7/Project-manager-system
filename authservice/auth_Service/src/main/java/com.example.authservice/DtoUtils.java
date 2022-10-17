@@ -16,4 +16,10 @@ public class DtoUtils {
             return null;
         }
     }
+    public UserDTO[] toUsersDTO(final String req){
+        if(req == null){
+            return null;
+        }
+        return gson.fromJson(req,UserDTO[].class);
+    }
 }

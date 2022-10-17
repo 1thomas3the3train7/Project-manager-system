@@ -5,38 +5,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbe44385-f810-4fdb-adb3-60347a5aa80a" name="Changes" comment="add project model and fix authservice">
-      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/DTO/CostDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/DTO/PassportDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/DTO/PlanDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/DTO/ProjectDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/DTO/TaskDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/DTO/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/Service/PassportService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/Service/ProjectService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/Utils/UtilsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reactclient/src/Pages/CreateProject/CreateProject-component1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reactclient/src/Pages/CreateProject/CreateProject.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reactclient/src/Pages/Main/Main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reactclient/src/style/createproject.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reactclient/src/style/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authservice/auth_Controllers/src/main/java/com.example.authservice/Controllers/ProjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authservice/auth_Service/src/main/java/com.example.authservice/DTO/ResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authservice/auth_Service/src/main/java/com.example.authservice/DTO/UserSearchDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authservice/auth_Service/src/main/java/com.example.authservice/ProjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authservice/auth_Service/src/main/java/com.example.authservice/Validate/DateParse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authservice/auth_Service/src/main/proto/Project.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/User/ShortUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/Grpc/GrpcProjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/Grpc/GrpcUserProjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/Service/BudgetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/Service/PlanService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/Service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/Validate/DateParse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/proto/Project.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/proto/UserProject.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/DTO/UserSearchDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/GrpcClient/GrpcUserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/Validate/DateParse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/proto/UserProject.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/auth_Controllers/src/main/java/com.example.authservice/Config/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/auth_Controllers/src/main/java/com.example.authservice/Config/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/auth_Controllers/src/main/java/com.example.authservice/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/auth_Controllers/src/main/java/com.example.authservice/Config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authservice/auth_Controllers/src/main/java/com.example.authservice/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/auth_Controllers/src/main/java/com.example.authservice/Controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/auth_Data/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/auth_Data/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authservice/auth_Service/src/main/java/com.example.authservice/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/auth_Service/src/main/java/com.example.authservice/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/auth_Service/src/main/java/com.example.authservice/DTO/ProjectDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/auth_Service/src/main/java/com.example.authservice/DTO/ProjectDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/auth_Service/src/main/java/com.example.authservice/DtoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/auth_Service/src/main/java/com.example.authservice/DtoUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/auth_Service/src/main/java/com.example.authservice/Grpc/GrpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/auth_Service/src/main/java/com.example.authservice/Grpc/GrpcClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authservice/auth_Service/src/main/java/com.example.authservice/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/auth_Service/src/main/java/com.example.authservice/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/Config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/Config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authservice/auth_Service/src/main/proto/User.proto" beforeDir="false" afterPath="$PROJECT_DIR$/authservice/auth_Service/src/main/proto/User.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/Config/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/java/com/example/gateway/Config/Route.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Budget/BaseBudget.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Budget/BaseBudget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Budget/DetailedBudget.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Budget/DetailedBudget.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Passport/BasePassport.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Passport/BasePassport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Passport/DetailedPassport.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Passport/DetailedPassport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Plan/BasePlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Plan/BasePlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Plan/DetailedPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Plan/DetailedPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Project/BaseProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Project/BaseProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Project/DetailedProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Project/DetailedProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Task/DetailedTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/Task/DetailedTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/User/DetailedUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/User/DetailedUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/User/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/User/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/UserGroup/DetailedUserGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Model/UserGroup/DetailedUserGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Repository/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Repository/ProjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/RepositoryImpl/ProjectRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/RepositoryImpl/ProjectRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/RepositoryImpl/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Repository/src/main/java/com.example.projectservice/RepositoryImpl/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/DTO/PassportDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/DTO/PassportDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/DTO/ProjectDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/DTO/ProjectDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/DTO/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/DTO/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/ProjectserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/ProjectserviceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactclient/src/Pages/Auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/reactclient/src/Pages/Auth/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactclient/src/Pages/Auth/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/reactclient/src/Pages/Auth/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactclient/src/Route/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/reactclient/src/Route/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactclient/src/forAxios/AxiosProp.js" beforeDir="false" afterPath="$PROJECT_DIR$/reactclient/src/forAxios/AxiosProp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reactclient/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/reactclient/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/Service/PassportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/Service/PassportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/Service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Service/src/main/java/com.example.projectservice/Service/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectservice/project_Service/src/test/java/com/example/projectservice/ProjectserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectservice/project_Service/src/test/java/com/example/projectservice/ProjectserviceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reactclient/src/Pages/CreateProject/CreateProject-component1.js" beforeDir="false" afterPath="$PROJECT_DIR$/reactclient/src/Pages/CreateProject/CreateProject-component1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reactclient/src/style/createproject.css" beforeDir="false" afterPath="$PROJECT_DIR$/reactclient/src/style/createproject.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/user_Repository/src/main/java/com/example/userservice/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Repository/src/main/java/com/example/userservice/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/user_Repository/src/main/java/com/example/userservice/RepositoryImpl/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Repository/src/main/java/com/example/userservice/RepositoryImpl/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/user_Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/DTO/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/DTO/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/Grpc/GrpcServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/Grpc/GrpcServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/Service/DtoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/Service/DtoUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/UserserviceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/java/com/example/userservice/UserserviceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/user_Service/src/main/proto/User.proto" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/src/main/proto/User.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userservice/user_Service/src/test/java/com/example/userservice/UserserviceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/userservice/user_Service/src/test/java/com/example/userservice/UserserviceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,34 +145,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "C:/Users/maksi/Desktop/cors-test",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.scopes",
-    "spring.configuration.checksum": "de2dc055f2ab80f6e54e9cfb7598f034"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/maksi/Desktop/pms/projectservice/project_Service/src/main/proto&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;de2dc055f2ab80f6e54e9cfb7598f034&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\maksi\Desktop\pms\projectservice\project_Service\src\main\proto" />
       <recent name="C:\Users\maksi\Desktop\pms\projectservice\project_Service\src" />
       <recent name="C:\Users\maksi\Desktop\pms\projectservice\project_Service\src\main\java\com.example.projectservice" />
       <recent name="C:\Users\maksi\Desktop\pms\projectservice\project_Service\src\main" />
       <recent name="C:\Users\maksi\Desktop\pms\projectservice\project_Repository\src\main\java\com.example.projectservice" />
-      <recent name="C:\Users\maksi\Desktop\pms\authservice\auth_Controllers\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\maksi\Desktop\pms\authservice\auth_Service\src\main" />
@@ -165,29 +195,50 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserserviceApplication">
-    <configuration name="AuthserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="auth_Controllers" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authservice.AuthserviceApplication" />
+  <component name="RunManager" selected="JUnit.ProjectserviceApplicationTests.forUser1">
+    <configuration name="ProjectserviceApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project_Service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.authservice.*" />
+          <option name="PATTERN" value="com.example.projectservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.example.projectservice" />
+      <option name="MAIN_CLASS_NAME" value="com.example.projectservice.ProjectserviceApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gateway.GatewayApplication" />
+    <configuration name="ProjectserviceApplicationTests.forUser1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project_Service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.gateway.*" />
+          <option name="PATTERN" value="com.example.projectservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.example.projectservice" />
+      <option name="MAIN_CLASS_NAME" value="com.example.projectservice.ProjectserviceApplicationTests" />
+      <option name="METHOD_NAME" value="forUser1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProjectserviceApplicationTests.forproject2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="project_Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.projectservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.projectservice" />
+      <option name="MAIN_CLASS_NAME" value="com.example.projectservice.ProjectserviceApplicationTests" />
+      <option name="METHOD_NAME" value="forproject2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -225,34 +276,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="UserserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="user_Service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.userservice.UserserviceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.userservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.ProjectserviceApplicationTests" />
+      <item itemvalue="JUnit.ProjectserviceApplicationTests.forUser1" />
+      <item itemvalue="JUnit.ProjectserviceApplicationTests.forproject2" />
       <item itemvalue="Spring Boot.ProjectserviceApplication" />
-      <item itemvalue="Spring Boot.GatewayApplication" />
-      <item itemvalue="Spring Boot.AuthserviceApplication" />
+      <item itemvalue="Spring Boot.UserserviceApplication" />
       <item itemvalue="Spring Boot.ProjectserviceApplication (1)" />
       <item itemvalue="Spring Boot.ServerApplication" />
-      <item itemvalue="Spring Boot.UserserviceApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UserserviceApplication" />
-        <item itemvalue="Spring Boot.AuthserviceApplication" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
-        <item itemvalue="Spring Boot.ServerApplication" />
+        <item itemvalue="JUnit.ProjectserviceApplicationTests.forUser1" />
+        <item itemvalue="JUnit.ProjectserviceApplicationTests" />
         <item itemvalue="Spring Boot.ProjectserviceApplication (1)" />
+        <item itemvalue="JUnit.ProjectserviceApplicationTests.forproject2" />
+        <item itemvalue="Spring Boot.ServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -293,6 +339,10 @@
       <workItem from="1665746796530" duration="4384000" />
       <workItem from="1665756203732" duration="11281000" />
       <workItem from="1665767751541" duration="2768000" />
+      <workItem from="1665839680429" duration="353000" />
+      <workItem from="1665862884793" duration="4566000" />
+      <workItem from="1665915226139" duration="15093000" />
+      <workItem from="1665999211123" duration="10394000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1664821098689</created>

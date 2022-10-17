@@ -18,7 +18,7 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @Table(name = "users")
-public class DetailedUsers extends Users {
+public class DetailedUser extends User {
     @CreationTimestamp
     private Date dateCreate;
     @UpdateTimestamp
@@ -27,10 +27,16 @@ public class DetailedUsers extends Users {
     @JoinTable(name = "task_and_user",joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "task_id"))
     private Set<DetailedTask> tasks;
-    @OneToOne(mappedBy = "users")
-    private DetailedProject project;
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "project_and_user",joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "project_id"))
+    private Set<DetailedProject> projects;
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "user_and_group",joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "group_id"))
     private Set<DetailedUserGroup> userGroups;
+
+    public DetailedUser(String email, int userService_id) {
+        super(email, userService_id);
+    }
 }

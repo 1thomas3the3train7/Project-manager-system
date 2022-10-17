@@ -16,4 +16,8 @@ public class BaseBudget {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private Integer money;
+
+    public BaseBudget(Integer money) {
+        this.money = money;
+    }
 }

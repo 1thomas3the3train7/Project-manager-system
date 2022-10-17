@@ -11,10 +11,16 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @Table(name = "users")
-public class Users {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    private String email;
+    private int userService_id;
     private String firstName;
 
+    public User(String email, int userService_id) {
+        this.email = email;
+        this.userService_id = userService_id;
+    }
 }

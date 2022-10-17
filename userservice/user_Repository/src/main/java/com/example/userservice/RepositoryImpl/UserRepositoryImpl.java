@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Repository
 public class UserRepositoryImpl implements UserRepository {
@@ -33,10 +34,23 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     @Transactional
-    public ShortUser getShortUserByEmail(String email) {
+    public ShortUser getShortUserByEmail(final String email) {
         final ShortUser shortUser = em.createQuery("SELECT u FROM ShortUser u WHERE u.email = ?1", ShortUser.class)
                 .setParameter(1,email)
                 .getResultList().stream().findFirst().orElse(null);
         return shortUser;
+    }
+
+    @Override
+    @Transactional
+    public List<ShortUser> getShortUsersByName(final String name,final int firstPage) {
+        final List<ShortUser> shortUsers = em.createQuery("SELECT u FROM ShortUser u " +
+                        "WHERE LOWER(u.firstName) LIKE LOWER(?1)", ShortUser.class)
+                .setParameter(1,"%" + name + "%")
+                .setFirstResult((firstPage - 1) * 10)
+                .setMaxResults(10)
+                .getResultList();
+        System.out.println(shortUsers);
+        return shortUsers;
     }
 }

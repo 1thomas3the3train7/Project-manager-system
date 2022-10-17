@@ -24,5 +24,11 @@ public class UserserviceApplication implements CommandLineRunner {
 		DetailedUser detailedUser = new DetailedUser();
 		detailedUser.setEmail("email");
 		userRepository.saveUser(detailedUser);
+		for(int i = 0;i < 100;i++){
+			DetailedUser detailedUser1 = new DetailedUser();
+			detailedUser1.setEmail("email" + i);
+			detailedUser1.setFirstName("name" + i);
+			userRepository.saveUser(detailedUser1);
+		}
 	}
 }

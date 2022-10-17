@@ -24,4 +24,8 @@ public class DetailedPlan extends BasePlan {
     private Date dateUpdate;
     @OneToOne(mappedBy = "plan")
     private DetailedProject project;
+
+    public DetailedPlan(String description) {
+        super(description);
+    }
 }

@@ -1,5 +1,6 @@
 package com.example.userservice.Service;
 
+import com.example.userservice.DTO.UserSearchDTO;
 import com.example.userservice.Model.Role.ShortRole;
 import com.example.userservice.Model.User.DetailedUser;
 import com.example.userservice.Model.User.ShortUser;
@@ -34,10 +35,21 @@ public class UserService {
                 new DetailedUser(userDTO.getEmail(),userDTO.getPassword(),userDTO.getFirstName());
         userRepository.saveUser(detailedUser);
         final ShortRole shortRole = roleRepository.getShortRoleByName("ROLE_USER");
+        roleRepository.appendUserAndRole(detailedUser,shortRole);
 
         return "user saved";
     }
     public String saveUserFromProto(final String email,final String password,final String firstName){
         return saveUser(new UserDTO(email,password,firstName));
+    }
+    public String searchUser(final String request){
+        final UserSearchDTO userSearchDTO = gson.fromJson(request, UserSearchDTO.class);
+        final String name = userSearchDTO.getName();
+        int page = userSearchDTO.getPage();
+        if(page < 1){page = 1;}
+        if(name == null){
+            return null;
+        }
+        return gson.toJson(dtoUtils.ListShortUsersToDto(userRepository.getShortUsersByName(name,page)));
     }
 }
