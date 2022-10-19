@@ -5,6 +5,8 @@ eureka:
 server:
   port: 0
 spring:
+  application:
+    name: projectservice
   jpa:
     properties:
       hibernate:

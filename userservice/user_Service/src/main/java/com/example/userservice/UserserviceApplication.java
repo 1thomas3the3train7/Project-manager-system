@@ -1,7 +1,10 @@
 package com.example.userservice;
 
 
+import com.example.userservice.Model.Role.DetailedRole;
+import com.example.userservice.Model.Role.ShortRole;
 import com.example.userservice.Model.User.DetailedUser;
+import com.example.userservice.Repository.RoleRepository;
 import com.example.userservice.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -19,8 +22,13 @@ public class UserserviceApplication implements CommandLineRunner {
 
 	@Autowired
 	private UserRepository userRepository;
+	@Autowired
+	private RoleRepository roleRepository;
 	@Override
 	public void run(String... args) throws Exception {
+		DetailedRole detailedRole = new DetailedRole();
+		detailedRole.setName("ROLE_USER");
+		roleRepository.save(detailedRole);
 		DetailedUser detailedUser = new DetailedUser();
 		detailedUser.setEmail("email");
 		userRepository.saveUser(detailedUser);

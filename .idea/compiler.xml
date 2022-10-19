@@ -14,6 +14,7 @@
         <module name="auth_Controllers" />
         <module name="auth_Service" />
         <module name="authservice (2)" />
+        <module name="auth-service" />
         <module name="user_Repository" />
         <module name="user_Data" />
         <module name="project_Data" />
@@ -23,13 +24,14 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="auth-service" target="17" />
       <module name="auth_Controllers" target="17" />
       <module name="auth_Data" target="17" />
       <module name="auth_Repository" target="17" />
       <module name="auth_Service" target="17" />
-      <module name="authservice" target="17" />
       <module name="authservice (1)" target="17" />
       <module name="authservice (2)" target="17" />
+      <module name="authservice2" target="17" />
       <module name="gateway" target="17" />
       <module name="project_Data" target="17" />
       <module name="project_Repository" target="17" />
@@ -44,13 +46,14 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-service" options="-parameters" />
       <module name="auth_Controllers" options="-parameters" />
       <module name="auth_Data" options="-parameters" />
       <module name="auth_Repository" options="-parameters" />
       <module name="auth_Service" options="-parameters" />
-      <module name="authservice" options="" />
       <module name="authservice (1)" options="-parameters" />
       <module name="authservice (2)" options="-parameters" />
+      <module name="authservice2" options="" />
       <module name="gateway" options="-parameters" />
       <module name="project_Data" options="-parameters" />
       <module name="project_Repository" options="-parameters" />
